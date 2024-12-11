@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Contact Us</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+<meta name="description" content="A concise and relevant description of your content.">
+<meta name="keywords" content="Keywords related to your content.">
+<style>
+
+body {
+    background-color: #2be062;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2a8f2e;
+    color: rgb(0, 0, 0);
+    padding: 0px;
+    text-align: center;
+    font-size: 6em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #006b12;
+}
+
+li {
+    float: left;
+    margin-right: 20px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #000000;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+label {
+    font-size: 1.5em;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: calc(100vh - 200px);
+    padding-top: 10px;
+}
+
+form {
+    width: 100%;
+}
+
+input[type="text"], input[type="email"], input[type="submit"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+}
+
+</style>
+</head>
+
+<body>
+
+    <header>Pharis Garden Centre</header>
+
+<ul>
+    <li><a href="Homepage.html">Home</a></li> 
+    <li><a href="Current Deals.html">Current Deals</a></li>
+    <li><a href="News and  Updates.html">News and Updates</a></li>
+    <li><a href="About Us.html">About Us</a></li> 
+</ul>
+  
+<h1>Contact Us</h1>
+
+<p style="text-align: center;">
+Welcome to our Contact Us page! We're here to assist you with any questions, concerns, <br>
+or feedback you may have. Whether you need support, want to share your thoughts, or simply <br>
+have a query, our team is ready to help. Please fill out the form below with your details and message, <br>
+and we'll get back to you as soon as possible. You can also reach us via phone or email for more <br>
+immediate assistance. We value your input and look forward to connecting with you!
+</p>
+
+
+
+    
+
+<div class="form-wrapper">
+    <div class="form-container">
+        <form action="SubmitForm" id="contactForm" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" required><br><br>
+    
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+    
+            <input type="submit" id="submitButton" value="Submit">
+        </form>
+    </div>
+</div>
+
+// Prevents from sending form for error
+<script>
+    document.getElementById('submitButton').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        // Do nothing
+    });
+</script>
+</body>
+</html>
